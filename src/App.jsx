@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="flex flex-col justify-center bg-slate-800 text-white min-h-screen w-full">
       <h1 className="text-center block sm:hidden">
-        This game is not designed for smartphones, please play on a computer or
+        This game is not designed for smartphones, please try it on a computer or
         tablet
       </h1>
       <div className="hidden sm:block">
