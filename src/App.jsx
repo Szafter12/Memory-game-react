@@ -46,9 +46,6 @@ function App() {
         i === first || i === second ? { ...block, reveal: false } : block,
       );
       setTimeout(() => {updateState(newBlocks)}, 1000);
-      if (points === symbols.length) {
-        alert("You win!");
-      }
     }
   }
 
@@ -57,6 +54,10 @@ function App() {
     setIsComapring(false);
     setFirstPick(null);
     setSecondPick(null);
+  }
+
+  if (points === symbols.length) {
+    alert("You win! Click the restart button");
   }
 
   return (
