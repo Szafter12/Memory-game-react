@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Pointer} from "./components/Pointer"
 
 const symbols = ["🍎", "🍊", "🍋", "🍉", "🍇", "🍓", "🍒", "🍍"];
 const shuffleSymbols = [...symbols, ...symbols].sort(() => Math.random() - 0.5);
@@ -86,11 +87,7 @@ function App() {
             Reset
           </button>
         </span>
-        <div className="text-center mt-5 text-4xl">
-          <p className="mb-5">
-            Points: <span>{points}</span>
-          </p>
-        </div>
+        <Pointer />
       </div>
     </div>
   );
